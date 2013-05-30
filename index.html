@@ -2,18 +2,27 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
 <head>
-	<title> jQuery Morse Code - Demo </title>
-	<meta name="keywords" content="jquery, morse, code, encrypt, decrypt, mvrilo, murilo, santana, plugin" />
-	<meta name="author" content="Murilo Santana" />
+	<title> jQuery Scout Translator - Demo </title>
+	<meta name="keywords" content="jquery, morse, code, encrypt, decrypt, plugin, murcielago, romana, cenit polar" />
+	<meta name="author" content="Rodrigo Castro" />
 </head>
 <body>
-	<h1>hello world!</h1>
-	<h2></h2>
+	<h1>Hello world!</h1>                 
+	<h2>Hello world! - This is a test</h2>
+	<h3>Hello world! - This is a test</h3>
+	<h4>Hello world! - This is a test</h4>
+	<h5>Hello world! - This is a test</h5>
+	<h6>Hello world! - This is a test</h6>
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="jquery-morse-code.js"></script>
+<script type="text/javascript" src="jquery.scout-translators.js"></script>
 <script type="text/javascript">
 	$(document).ready(function(){
-		$('h2').html($.morse('hello world!'));
+		$('h1').html($.morse($('h1').html()));
+		$('h2').html($.cenit($('h2').html()));
+		$('h3').html($.murcielago($('h3').html()));
+		$('h4').html($.romana($('h4').html()));
+		$('h5').html($.plusOne($('h5').html()));
+		$('h6').html($.sufamelico($('h6').html()));
 	});
 </script>
 </body>
