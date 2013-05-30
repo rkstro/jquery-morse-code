@@ -1,7 +1,31 @@
-jQuery Morse Code
+jQuery Scout Translators
 
-jQuery plugin that encodes strings (characters) into Morse Code characters, and vice versa.
+jQuery plugin that encodes characters of a string into Morse Code and vice versa, and others Boy Scout Codifications
+
+Plugin para Jquery que permite de manera fácil traducir a distintas claves Scout como son:
+* Código Morse
+* Cenit Polar
+* Murcielago
+* +1, -1
+* Sufamelico
+* Romana
+
+Forma de Uso:
+  Código Morse:
+    $.morse('texto', 'encode'); o $.morse('texto');
+    $.morse('morse-code', 'decode');
+
+  Resto de Traductores:
+    $.cenit('texto');
+    $.murcielago('texto');
+    $.romana('texto');
+    $.plusOne('texto');
+    $.minusOne('texto');
+    $.sufamelico('texto');
+
+
 
 Licensed under GPL.
+Based on 2010, Murilo Santana <mvrilo@gmail.com> version of Morse Code
 
-2010, Murilo Santana <mvrilo@gmail.com>
+2013, Rodrigo Castro <r.kstro15[at]gmail.com>
